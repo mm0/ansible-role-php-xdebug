@@ -1,9 +1,9 @@
 ---
 galaxy_info:
-  author: geerlingguy
+  author: Matt Margolin
   description: PHP XDebug for Linux
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  company:
+  license: BSD
   min_ansible_version: 2.0
   platforms:
     - name: EL

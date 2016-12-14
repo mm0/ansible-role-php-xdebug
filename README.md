@@ -1,14 +1,17 @@
-# Ansible Role: PHP-XDebug
+Ansible Role: PHP-XDebug
+===
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-php-xdebug.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-php-xdebug)
+[![Build Status](https://travis-ci.org/mm0/ansible-role-php-xdebug.svg?branch=master)](https://travis-ci.org/mm0/ansible-role-php-xdebug)
 
 Installs PHP [XDebug](http://xdebug.org/) on Linux servers.
 
-## Requirements
+Requirements
+---
 
 Prior to running this role, make sure the `php-devel` and `@Development Tools` (for RHEL/CentOS) or `php5-dev` + `build-essential` packages (for Debian/Ubuntu) are present on the system, as they are required for the build of Xdebug.
 
-## Role Variables
+Role Variables
+---
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
@@ -58,20 +61,30 @@ The IDE key to use in the URL when making Xdebug requests (e.g. `http://example.
 
 The maximimum function nesting level before Xdebug bails and throws a fatal exception.
 
-## Dependencies
+Dependencies
+---
 
-  - geerlingguy.php
+None
 
-## Example Playbook
+Example Playbook
+---
 
-    - hosts: webservers
-      roles:
-        - { role: geerlingguy.php-xdebug }
+```yml
+- hosts: webservers
+  roles:
+    - { role: geerlingguy.php-xdebug }
+```
 
-## License
+License
+---------------
 
-MIT / BSD
+BSD-2
 
-## Author Information
+Author Information
+------------------
 
-This role was created in 2014 by [Jeff Geerling](http://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+[Matt Margolin](mailto:matt.margolin@gmail.com)
+
+[mm0](https://github.com/mm0) on github
+
+Forked from Jeff Geerling to remove dependency
